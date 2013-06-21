@@ -9,7 +9,7 @@ Service Discovery (DNS-SD). Also known as Bonjour or Avahi.
 
 ## Example
 
-Find all local web servers.
+To find all local web servers.
 
 ```haskell
 import Network.DNSSD
@@ -18,14 +18,14 @@ main = do
   putStrLn . show $ servers
 ```
 
-Should look something like this:
+This should look something like this:
 
 ```
 [
   SRecord {deviceName = "Maxwell\8217s Server",
            serviceName = "_http._tcp.", deviceDomain = "local."}
- ,SRecord {deviceName = "Jenkins", serviceName = "_http._tcp.",
-           deviceDomain = "local."}
+, SRecord {deviceName = "Jenkins",
+           serviceName = "_http._tcp.", deviceDomain = "local."}
 ]
 ```
 
@@ -42,7 +42,7 @@ dnsAny s = do
     else dnsResolve $ head things
 
 main = do
-  web <- dnsBrowse "_http._tcp"
+  web <- dnsAny "_http._tcp"
   print web
 ```
 
