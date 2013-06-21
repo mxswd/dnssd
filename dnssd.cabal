@@ -1,0 +1,31 @@
+name:                dnssd
+version:             0.1.0.0
+synopsis:            DNS service discovery bindings
+description:
+    dnssd provides Haskell bindings to Multicast DNS (mDNS) and DNS
+    Service Discovery (DNS-SD). Also known as Bonjour or Avahi.
+
+homepage:            https://github.com/maxpow4h/dnssd
+license:             BSD3
+license-file:        LICENSE
+author:              Maxwell Swadling
+maintainer:          maxwellswadling@gmail.com
+category:            Network
+Stability:           Experimental
+
+build-type:          Simple
+cabal-version:       >= 1.6
+
+library
+  exposed-modules:     Network.DNSSD
+  build-depends:       base, transformers
+  c-sources:           resolve.c
+  extensions:          ForeignFunctionInterface
+  ghc-options:         -O2
+                       -Wall
+                       -fwarn-tabs
+
+source-repository head
+  type:     git
+  location: git://github.com/maxpow4h/dnssd.git
+
