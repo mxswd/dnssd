@@ -21,6 +21,8 @@ library
   build-depends:       base, transformers
   c-sources:           resolve.c
   extensions:          ForeignFunctionInterface
+  if !os(darwin)
+    extra-libraries:   dns_sd
   ghc-options:         -O2
                        -Wall
                        -fwarn-tabs

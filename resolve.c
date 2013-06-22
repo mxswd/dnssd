@@ -1,7 +1,7 @@
 #include <dns_sd.h>
 #include <errno.h>
 
-#include "Network/Dnssd_stub.h"
+#include "dist/build/Network/DNSSD_stub.h"
 
 static volatile int timeIn = 0;
 static volatile int timeOut = 67108864;

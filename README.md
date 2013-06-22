@@ -7,6 +7,9 @@ Service Discovery (DNS-SD). Also known as Bonjour or Avahi.
 
     cabal install dnssd
 
+On Linux you need the `libavahi-compat-libdnssd-dev` package
+installed as well.
+
 ## Example
 
 To find all local web servers.
@@ -51,9 +54,9 @@ main = do
 Works on:
 
 - Mac
+- Linux
 
 Doesn't work on yet:
 
-- Linux
 - Windows
 
