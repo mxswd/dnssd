@@ -1,5 +1,6 @@
 #include <dns_sd.h>
 #include <errno.h>
+#include <stdlib.h>
 
 #include "dist/build/Network/DNSSD_stub.h"
 
