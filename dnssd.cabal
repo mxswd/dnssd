@@ -19,7 +19,7 @@ extra-source-files:  resolve.h README.md
 
 library
   exposed-modules:     Network.DNSSD
-  build-depends:       base, transformers
+  build-depends:       base == 4.*, transformers == 0.3.*
   c-sources:           resolve.c
   extensions:          ForeignFunctionInterface
   if !os(darwin)
