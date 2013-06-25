@@ -3,6 +3,9 @@
 `dnssd` provides Haskell bindings to Multicast DNS (mDNS) and DNS
 Service Discovery (DNS-SD). Also known as Bonjour or Avahi.
 
+**WARNING**: There is currently a bug that causes the C code to get
+stuck in a loop when used in a large network. This is an *experimental* library.
+
 ## Install
 
     cabal install dnssd
