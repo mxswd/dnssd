@@ -15,6 +15,9 @@ installed as well.
 
 ## Example
 
+[slide-simple.hs](https://github.com/maxpow4h/slideshow/blob/master/slide-simple.hs)
+is a simple example of displaying jpegs to an Apple TV.
+
 To find all local web servers.
 
 ```haskell
