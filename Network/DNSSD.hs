@@ -14,9 +14,6 @@ data SRecord = SRecord { deviceName :: String
                        , deviceDomain :: String
                        } deriving (Show, Eq)
 
--- yes, this is Eq, this is sufficient information to identify a device on
--- the network uniquely.
-
 -- | 'SResolved' is a resolved network service.
 -- You can use this information to connect to the device.
 data SResolved = SResolved { fullname :: String
